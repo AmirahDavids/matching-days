@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+h1,
+p,
+label,li {
+    font-family: 'Rancho', cursive;
+    font-weight: lighter;
+}
+
+li{
+    font-size: 20px;
+}
+
+.list-group {
+    list-style: none;
+    text-align: center;
+}
+
+.list-item {
+    padding: 10px;
+    border: 1px solid black;
+    height: 28px;
+    width: 130px;
+    margin-left: 15%;
+    border-radius: 10px;
+}
+
+
+
+.color {
+    background-color: thistle;
+}
+.inputboxes{
+    margin: 0 auto;
+    text-align: center;
+}
+.date1 {
+    padding: 10px;
+    margin: 20px;
+}
+
+.date2 {
+    padding: 10px;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+
+/* Media Queries */
+
+@media only screen and (min-width: 375px) {
+
+    .list-group {
+        display: flexbox;
+    }
+
+}
+
+@media only screen and (min-width: 812px) {
+
+    .insertMatchingDaysTemplate {
+        margin: 0 auto;
+
+    }
+
+    .list-group {
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .list-item {
+        margin: 11px;
+        border: 1px solid black;
+    }
+
+}
