@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="color" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/match.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+
+    <title>Matching Days</title>
+
+    <h1>Matching Days</h1>
+
+    <script type="text/x-template" class="matchingDaysTemplate">
+        <ul class="list-group">
+            {{#each days}}
+                <li class="{{dateOneColor}} {{dateTwoColor}} {{match}} list-item">{{nameOfDay}}</li>
+            {{/each}}
+        </ul>
+       
+
+    </script>
+</head>
+
+<body>
+    <div class="insertMatchingDaysTemplate"></div>
+    <div class="inputboxes" >
+
+        <div class="date1"> <input type="date" class="dateOne"></div>
+        <div class="date2"> <input type="date" class="dateTwo"></div>
+    </div>
+
+
+</body>
+<script src="./js/matching_days_factory.js"></script>
+<script src="./js/matching_days_dom.js"></script>
+
+</html>
